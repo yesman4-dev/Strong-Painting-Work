@@ -1,0 +1,457 @@
+/* Asegura que el cuerpo ocupe toda la altura de la ventana */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    color: white;
+    min-height: 100vh; /* Altura mínima igual a la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegurar que el contenido principal ocupe todo el espacio disponible */
+/* Main ocupa el espacio restante */
+main {
+    flex: 1; /* Esto asegura que main se expanda para llenar el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido si es necesario */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.nav-links.open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+.nav-links.open li {
+    margin: 10px 0;
+}
+
+section {
+    padding: 100px 20px 20px;
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 45%;
+    max-width: 500px;
+    color: white;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centrado del texto */
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px; /* Espacio adicional debajo del párrafo */
+    text-align: center; /* Centrado del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.contact-form h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+.contact-form select {
+    background-color: #f8f8f8;
+}
+
+.contact-form textarea {
+    background-color: #f8f8f8;
+    resize: vertical;
+}
+
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #FFD700;
+    color: #001f3f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ffc107;
+}
+
+
+/* Footer siempre está en la parte inferior */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #FFD700;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.open {
+        width: auto;
+        right: 0;
+        left: 0;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-form{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.social-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.social-cards a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Para que el enlace abarque todo el card */
+}
+
+
+.social-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 200px;
+    max-width: 250px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Social Cards */
+.social-card i {
+    font-size: 3rem; /* Aumenta el tamaño del ícono */
+    margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Colores personalizados para cada red social */
+.social-card:nth-child(1) i {
+    color: #4267B2; /* Facebook */
+}
+.social-card:nth-child(2) i {
+    color: #E1306C; /* Instagram */
+}
+.social-card:nth-child(3) i {
+    color: #000; /* Ícono negro para X */
+}
+.social-card:nth-child(4) i {
+    color: #0077B5; /* LinkedIn */
+}
+.social-card:nth-child(5) i {
+    color: #010101; /* TikTok */
+}
+/* WhatsApp */
+.social-card:nth-child(6) i {
+    color: #25D366; /* WhatsApp */
+}
+
+/* Efecto de hover para los íconos */
+.social-card:hover i {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+}
+
+/* Opcional: Fondo de las tarjetas cambia al pasar el cursor */
+.social-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.social-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.social-card a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Language Selector Styles */
+.language-selector {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.servicios-section {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.servicios-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.servicio-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    flex-wrap: wrap; /* Ajusta contenido si es necesario */
+}
+
+.servicio-item:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-icon {
+    font-size: 28px;
+    color: #f4a261;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.servicio-content h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.servicio-content p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .servicios-section h2 {
+        font-size: 20px;
+    }
+
+    .servicios-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .servicio-item {
+        flex-direction: column; /* Cambia a formato vertical en móviles */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .servicio-icon {
+        margin: 0 0 10px;
+        font-size: 24px;
+    }
+
+    .servicio-content h3 {
+        font-size: 14px;
+    }
+
+    .servicio-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-section {
+        padding: 10px;
+    }
+
+    .servicios-section h2 {
+        font-size: 18px;
+    }
+
+    .servicio-icon {
+        font-size: 20px;
+    }
+
+    .servicio-content h3 {
+        font-size: 12px;
+    }
+
+    .servicio-content p {
+        font-size: 10px;
+    }
+}

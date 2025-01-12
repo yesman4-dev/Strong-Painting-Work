@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Painting Work</title>
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Strong Painting Work</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="proyectos.html" class="translate" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="contacto.html" class="translate" data-es="Contáctame" data-en="Contact">Contáctame</a></li>
+                <!-- Selector de idioma dentro del menú -->
+                <li>
+                    <select id="language-selector" class="language-selector">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="estados">
+        <h2 style="color: black;" class="translate" data-es="Mis Estados" data-en="My States">Mis Estados</h2>
+        <div class="estados-container">
+            <div class="estado" data-img="recursos/estado1-thumb.jpg">
+                <img src="recursos/estado1-thumb.jpg" alt="Estado 1">
+            </div>
+            <div class="estado" data-img="recursos/estado2-thumb.jpg">
+                <img src="recursos/estado2-thumb.jpg" alt="Estado 2">
+            </div>
+            <div class="estado" data-img="recursos/estado3-thumb.jpg">
+                <img src="recursos/estado3-thumb.jpg" alt="Estado 3">
+            </div>
+            <div class="estado" data-img="recursos/estado4-thumb.jpg">
+                <img src="recursos/estado4-thumb.jpg" alt="Estado 4">
+            </div>
+            <div class="estado" data-img="recursos/estado5-thumb.jpg">
+                <img src="recursos/estado5-thumb.jpg" alt="Estado 5">
+            </div>
+            <div class="estado" data-img="recursos/estado6-thumb.jpg">
+                <img src="recursos/estado6-thumb.jpg" alt="Estado 6">
+            </div>
+            <div class="estado" data-img="recursos/estado7-thumb.jpg">
+                <img src="recursos/estado7-thumb.jpg" alt="Estado 7">
+            </div>
+            <div class="estado" data-img="recursos/estado8-thumb.jpg">
+                <img src="recursos/estado8-thumb.jpg" alt="Estado 8">
+            </div>
+            <div class="estado" data-img="recursos/estado9-thumb.jpg">
+                <img src="recursos/estado9-thumb.jpg" alt="Estado 9">
+            </div>
+            <div class="estado" data-img="recursos/estado10-thumb.jpg">
+                <img src="recursos/estado10-thumb.jpg" alt="Estado 10">
+            </div>
+        </div>
+        <div class="estado-modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="estado-modal-img" src="" alt="Estado Ampliado">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="proyectos">
+        <h1  style="color: black;" class="translate" data-es="Mis Proyectos" data-en="My Projects">Mis Proyectos</h1>
+        <div class="videos-container">
+            <!-- Reemplaza los enlaces dentro del iframe con los códigos de incrustación de tus videos de TikTok -->
+            <div class="video">
+                <iframe 
+                    src="https://www.tiktok.com/embed/7457661810871749893"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video">
+                <iframe 
+                    src="https://www.tiktok.com/embed/7457663234204749061"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video">
+                <iframe 
+                    src="https://www.tiktok.com/embed/7457665781661306117"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video">
+                <iframe 
+                    src="https://www.tiktok.com/embed/7457667189668105477"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+<!-- Sección de Misión y Visión -->
+<section id="mision-vision">
+    <div class="container">
+        <div class="mision">
+            <h2 class="translate" data-es="Misión" data-en="Mission"></h2>
+            <p class="translate" data-es="Nuestra misión es transformar espacios a través de servicios de pintura, fontanería y mantenimiento de alta calidad, asegurando la satisfacción de nuestros clientes mediante profesionalismo, innovación y compromiso." data-en="Our mission is to transform spaces through high-quality painting, plumbing, and maintenance services, ensuring customer satisfaction through professionalism, innovation, and commitment."></p>
+        </div>
+        <div class="vision">
+            <h2 class="translate" data-es="Visión" data-en="Vision"></h2>
+            <p class="translate" data-es="Ser reconocidos como líderes en soluciones integrales para el hogar y la industria, destacándonos por nuestra excelencia, ética y pasión por crear ambientes únicos y funcionales." data-en="To be recognized as leaders in comprehensive solutions for home and industry, standing out for our excellence, ethics, and passion for creating unique and functional environments."></p>
+            <p class="translate" data-es="Expandir nuestra presencia a más estados de la región, consolidándonos como la empresa de confianza en pintura, fontanería, renovación y transformación de hogares y espacios de trabajo. Aspiramos a convertir cada proyecto en una oportunidad para reflejar innovación, calidad y diseño único que inspire a nuestros clientes." data-en="To expand our presence to more states in the region, establishing ourselves as the trusted company in painting, plumbing, renovation, and transformation of homes and workspaces. We aim to turn each project into an opportunity to reflect innovation, quality, and unique design that inspires our clients."></p>
+            <p class="translate" data-es="Nuestro compromiso es transformar y crear ambientes que sean tanto estéticamente atractivos como altamente funcionales, aportando valor a cada espacio y mejorando la calidad de vida y el entorno laboral de nuestros clientes." data-en="Our commitment is to transform and create environments that are both aesthetically pleasing and highly functional, adding value to each space and improving the quality of life and work environment for our clients."></p>
+        </div>
+    </div>
+</section>
+
+   
+    <section id="map-section">
+        <h2 class="translate" data-es="Zonas de Cobertura" data-en="Coverage Areas"></h2>
+        <div id="map"></div>
+    </section>
+    
+
+    <section id="explorar-servicios">
+        <div class="explorar-container">
+            <div class="explorar-columna">
+                <h3 class="translate" data-es="Otros lugares cercanos" data-en="Other nearby places"></h3>
+                <ul>
+                    <li> <a href="https://www.yelp.com/biz/strong-painting-work-and-remodeling-florence?destination=https%3A%2F%2Fapp.adjust.com%2F9ib7e21%3Fal_id%3D72803d9639f84745aa875505f2fa6536%26campaign%3Dmobile_site_service%26adgroup%3Dbiz_details.searchbar_app_link%26label%3D42242254A730241A%252CJRrFZ01sLB1dAKpK8k_sKw%252C282b21e1c512478b" class="translate" data-es="más contratistas generales cerca de Strong Painting Work and Remodeling" data-en="more general contractors near Strong Painting Work and Remodeling"></a> </li>
+                    <li class="translate" data-es="Encuentre más pintores cerca de Strong Painting Work and Remodeling" data-en="Find more painters near Strong Painting Work and Remodeling"></li>
+                </ul>
+            </div>
+            <div class="explorar-columna">
+                <h3 class="translate" data-es="Ofertas de servicios en Florence" data-en="Service offers in Florence"></h3>
+                <ul>
+                    <li class="translate" data-es="Pintura de gabinetes" data-en="Cabinet painting"></li>
+                    <li class="translate" data-es="Combinación de colores" data-en="Color combination"></li>
+                    <li class="translate" data-es="Servicios comerciales" data-en="Commercial services"></li>
+                    <li class="translate" data-es="Pintura exterior" data-en="Exterior painting"></li>
+                </ul>
+            </div>
+            <div class="explorar-columna">
+                <h3 class="translate" data-es="Búsquedas relacionadas en Florence, KY" data-en="Related searches in Florence, KY"></h3>
+                <ul>
+                    <li class="translate" data-es="Arquitectos" data-en="Architects"></li>
+                    <li class="translate" data-es="Pavimentación de asfalto" data-en="Asphalt paving"></li>
+                    <li class="translate" data-es="Detallado de automóviles" data-en="Car detailing"></li>
+                    <li class="translate" data-es="Remodelación del baño" data-en="Bathroom remodeling"></li>
+                    <li class="translate" data-es="Contratista de remodelación de baños" data-en="Bathroom remodeling contractor"></li>
+                    <li class="translate" data-es="Renovación de bañeras" data-en="Bathtub renovation"></li>
+                    <li class="translate" data-es="Resmaltado de bañeras" data-en="Bathtub resurfacing"></li>
+                    <li class="translate" data-es="Gabinetes" data-en="Cabinets"></li>
+                    <li class="translate" data-es="Carpinteros" data-en="Carpenters"></li>
+                    <li class="translate" data-es="Alfombra" data-en="Carpet"></li>
+                    <li class="translate" data-es="Limpieza de alfombras" data-en="Carpet cleaning"></li>
+                    <li class="translate" data-es="Instalación de alfombras" data-en="Carpet installation"></li>
+                    <li class="translate" data-es="Deshollinadores" data-en="Chimney sweeps"></li>
+                    <li class="translate" data-es="Servicio de limpieza" data-en="Cleaning services"></li>
+                    <li class="translate" data-es="Contratistas de hormigón" data-en="Concrete contractors"></li>
+                    <li class="translate" data-es="Reparación de hormigón" data-en="Concrete repair"></li>
+                    <li class="translate" data-es="Construcción" data-en="Construction"></li>
+                    <li class="translate" data-es="Empresas de construcción" data-en="Construction companies"></li>
+                    <li class="translate" data-es="Contratistas" data-en="Contractors"></li>
+                    <li class="translate" data-es="Restauración de daños" data-en="Damage restoration"></li>
+                    <li class="translate" data-es="Constructor de cubiertas" data-en="Deck builder"></li>
+                    <li class="translate" data-es="Contratista de cubiertas" data-en="Deck contractor"></li>
+                    <li class="translate" data-es="Reparación de cubiertas" data-en="Deck repair"></li>
+                    <li class="translate" data-es="Cubiertas y barandillas" data-en="Decks and railings"></li>
+                    <li class="translate" data-es="Contratistas de drenaje" data-en="Drain contractors"></li>
+                    <li class="translate" data-es="Pavimentación de caminos de acceso" data-en="Driveway paving"></li>
+                    <li class="translate" data-es="Sellado de entradas de vehículos" data-en="Driveway sealing"></li>
+                    <li class="translate" data-es="Instalación y reparación de paneles de yeso" data-en="Drywall installation and repair"></li>
+                    <li class="translate" data-es="Reparación de paneles de yeso" data-en="Drywall repair"></li>
+                    <li class="translate" data-es="Electricistas" data-en="Electricians"></li>
+                    <li class="translate" data-es="Pintura exterior de casas" data-en="Exterior house painting"></li>
+                </ul>
+            </div>
+    
+            <div class="explorar-columna">
+                <h3 class="translate" data-es="Guías de costos relacionadas" data-en="Related cost guides"></h3>
+                <ul>
+                    <li class="translate" data-es="Servicios de excavación" data-en="Excavation services"></li>
+                    <li class="translate" data-es="Servicios de protección contra incendios" data-en="Fire protection services"></li>
+                    <li class="translate" data-es="Pintores" data-en="Painters"></li>
+                    <li class="translate" data-es="Lavadoras a presión" data-en="Pressure washers"></li>
+                    <li class="translate" data-es="Inspectores de techos" data-en="Roof inspectors"></li>
+                    <li class="translate" data-es="Techadores" data-en="Roofers"></li>
+                    <li class="translate" data-es="Cortinas y persianas" data-en="Shutters and blinds"></li>
+                    <li class="translate" data-es="..." data-en="..."></li> <!-- Agrega más si es necesario -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61571726706833" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@strongwork81?lang=es" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/strong-painting-work-318481346/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="translate" data-es="&copy; 2025 Strong Painting Work. Todos los derechos reservados." data-en="&copy; 2025 Strong Painting Work. All rights reserved."></p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+
+                    // Selección de elementos
+            const estados = document.querySelectorAll('.estado');
+            const modal = document.querySelector('.estado-modal');
+            const modalImg = document.querySelector('#estado-modal-img');
+            const closeModal = document.querySelector('.close');
+
+            // Abrir modal al hacer clic en un estado
+            estados.forEach(estado => {
+                estado.addEventListener('click', () => {
+                    const imgSrc = estado.getAttribute('data-img');
+                    modalImg.src = imgSrc;
+                    modal.classList.remove('hidden');
+                });
+            });
+
+            // Cerrar modal
+            closeModal.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+
+            // Cerrar modal al hacer clic fuera del contenido
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+
+    </script>
+
+<script>
+    // Al cargar la página, se ajusta el idioma predeterminado
+    document.addEventListener("DOMContentLoaded", function() {
+        const language = document.getElementById("language-selector").value; // 'es' o 'en'
+        translatePage(language); // Cambiar el texto según el idioma
+    });
+
+    // Cambiar idioma al seleccionar una opción
+    document.getElementById("language-selector").addEventListener("change", function() {
+        const language = this.value;
+        translatePage(language);
+    });
+
+    function translatePage(language) {
+        const elements = document.querySelectorAll(".translate");
+
+        elements.forEach(function(element) {
+            const translatedText = element.getAttribute("data-" + language);
+            if (translatedText) {
+                element.textContent = translatedText;
+            }
+        });
+    }
+</script>
+
+<script src="Scripts.js"></script>
+
+
+
+    
+</body>
+</html>

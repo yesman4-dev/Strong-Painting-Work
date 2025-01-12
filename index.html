@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Painting Work</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Strong Painting Work</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="proyectos.html" class="translate" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="contacto.html" class="translate" data-es="Contáctame" data-en="Contact">Contáctame</a></li>
+                <!-- Selector de idioma dentro del menú -->
+                <li>
+                    <select id="language-selector" class="language-selector">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="inicio">
+        <div class="carousel">
+            <div class="carousel-slide" style="background-image: url('recursos/banner1.jpg');">
+                <div class="carousel-text translate" data-es="Calidad Profesional en Pintura" data-en="Professional Quality in Painting">Calidad Profesional en Pintura</div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('recursos/banner2.jpg');">
+                <div class="carousel-text translate" data-es="Trabajos de Fontanería y Más" data-en="Plumbing Work and More">Trabajos de Fontanería y Más</div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('recursos/banner3.jpg');">
+                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('recursos/banner4.jpg');">
+                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('recursos/banner5.jpg');">
+                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('recursos/banner6.jpg');">
+                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2 class="translate" data-es="Proyectos" data-en="Projects">Proyectos</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn translate" data-filter="all" data-es="Todos" data-en="All">Todos</button>
+            <button class="filter-btn translate" data-filter="procesos" data-es="Proyectos en Proceso" data-en="Ongoing Projects">Proyectos en Proceso</button>
+            <button class="filter-btn translate" data-filter="terminados" data-es="Proyectos Terminados" data-en="Completed Projects">Proyectos Terminados</button>
+        </div>
+        
+        <div class="project-gallery">
+            <div class="project-item procesos">
+                <img src="recursos/proceso1.jpg" alt="Proyecto en Proceso 1">
+            </div>
+            <div class="project-item terminados">
+                <img src="recursos/terminado1.jpg" alt="Proyecto Terminado 1">
+            </div>
+            <div class="project-item procesos">
+                <img src="recursos/proceso3.jpg" alt="Proyecto en Proceso 1">
+            </div>
+            <div class="project-item terminados">
+                <img src="recursos/terminado2.jpg" alt="Proyecto Terminado 1">
+            </div>
+            <div class="project-item procesos">
+                <img src="recursos/proceso2.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="project-item terminados">
+                <img src="recursos/terminado3.jpg" alt="Proyecto Terminado 1">
+            </div>
+            <div class="project-item procesos">
+                <img src="recursos/proceso4.jpg" alt="Proyecto en Proceso 1">
+            </div>
+            <div class="project-item terminados">
+                <img src="recursos/terminado4.jpg" alt="Proyecto Terminado 1">
+            </div>
+            <div class="project-item terminados">
+                <img src="recursos/terminado5.jpg" alt="Proyecto Terminado 1">
+            </div>
+            <div class="project-item procesos">
+                <img src="recursos/proceso5.jpg" alt="Proyecto en Proceso 1">
+            </div>
+            <div class="project-item terminados">
+                <img src="recursos/terminado6.jpg" alt="Proyecto Terminado 2">
+            </div>
+            <div class="project-item procesos">
+                <img src="recursos/proceso6.jpg" alt="Proyecto en Proceso 1">
+            </div>
+            <div class="project-item terminados">
+                <img src="recursos/terminado7.jpg" alt="Proyecto Terminado 2">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2 class="translate" data-es="Servicios que Ofrecemos" data-en="Services We Offer">Servicios que Ofrecemos</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <i class="fas fa-paint-brush"></i>
+                <h3 class="translate" data-es="Lijado y Stein" data-en="Sanding and Staining">Lijado y Stein</h3>
+                <p class="translate" data-es="Obtén acabados perfectos con nuestros servicios de lijado y aplicación de Stein." data-en="Get perfect finishes with our sanding and staining services.">Obtén acabados perfectos con nuestros servicios de lijado y aplicación de Stein.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-paint-roller"></i>
+                <h3 class="translate" data-es="Trabajo de Pintura Exterior" data-en="Exterior Painting Work">Trabajo de Pintura Exterior</h3>
+                <p class="translate" data-es="Realizamos pintura exterior profesional para proteger y embellecer tus espacios." data-en="We provide professional exterior painting to protect and beautify your spaces.">Realizamos pintura exterior profesional para proteger y embellecer tus espacios.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-tools"></i>
+                <h3 class="translate" data-es="Instalación de Gabinetes" data-en="Cabinet Installation">Instalación de Gabinetes</h3>
+                <p class="translate" data-es="Montamos gabinetes con precisión para cocinas y baños." data-en="We install cabinets with precision for kitchens and bathrooms.">Montamos gabinetes con precisión para cocinas y baños.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-bath"></i>
+                <h3 class="translate" data-es="Trabajos en Baños" data-en="Bathroom Works">Trabajos en Baños</h3>
+                <p class="translate" data-es="Renovaciones y arreglos para que tus baños luzcan como nuevos." data-en="Renovations and fixes to make your bathrooms look brand new.">Renovaciones y arreglos para que tus baños luzcan como nuevos.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-paint-brush"></i>
+                <h3 class="translate" data-es="Trabajos de Pintura Interior" data-en="Interior Painting Work">Trabajos de Pintura Interior</h3>
+                <p class="translate" data-es="Creamos ambientes interiores acogedores y personalizados con pintura de alta calidad." data-en="We create cozy and personalized interior environments with high-quality paint.">Creamos ambientes interiores acogedores y personalizados con pintura de alta calidad.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61571726706833" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@strongwork81?lang=es" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/strong-painting-work-318481346/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="translate" data-es="&copy; 2025 Strong Painting Work. Todos los derechos reservados." data-en="&copy; 2025 Strong Painting Work. All rights reserved."></p>
+    </footer>
+    
+
+    <script src="Scripts.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        // Filtrado de proyectos
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                projectItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+<script>
+    document.getElementById("language-selector").addEventListener("change", function() {
+        var language = this.value; // 'es' o 'en'
+        var elements = document.querySelectorAll(".translate");
+
+        elements.forEach(function(element) {
+            var translatedText = element.getAttribute("data-" + language);
+            if (translatedText) {
+                element.textContent = translatedText;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

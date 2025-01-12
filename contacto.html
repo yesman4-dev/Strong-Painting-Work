@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Painting Work - Contáctame</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Strong Painting Work</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="translate" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="proyectos.html" class="translate" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="contacto.html" class="translate" data-es="Contáctame" data-en="Contact">Contáctame</a></li>
+                <!-- Selector de idioma dentro del menú -->
+                <li>
+                    <select id="language-selector" class="language-selector">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <section class="contact-section">
+        <h1 class="translate" data-es="Contáctame" data-en="Contact Us"></h1>
+        <p class="translate" data-es="Conéctate con nosotros a través de nuestras redes sociales o envíanos un mensaje usando el formulario a continuación." data-en="Connect with us through our social networks or send us a message using the form below."></p>
+
+        <div class="social-cards">
+            <a href="https://www.facebook.com/profile.php?id=61571726706833" target="_blank" class="social-card">
+                <i class="fab fa-facebook"></i>
+                <h2 class="translate" data-es="Facebook" data-en="Facebook"></h2>
+                <p class="translate" data-es="Visítanos" data-en="Visit us"></p>
+            </a>
+            <a href="https://www.instagram.com/tuPerfil" target="_blank" class="social-card">
+                <i class="fab fa-instagram"></i>
+                <h2 class="translate" data-es="Instagram" data-en="Instagram"></h2>
+                <p class="translate" data-es="Síguenos" data-en="Follow us"></p>
+            </a>
+            <a href="https://x.com/StrongPaintin" target="_blank" class="social-card">
+                <img src="recursos/logoX.png" alt="Logo de X" style="width: 50px; height: 50px;">
+                <h2 class="translate" data-es="X" data-en="X"></h2>
+                <p class="translate" data-es="Síguenos" data-en="Follow us"></p>
+            </a>
+            <a href="https://www.linkedin.com/in/strong-painting-work-318481346/" target="_blank" class="social-card">
+                <i class="fab fa-linkedin"></i>
+                <h2 class="translate" data-es="LinkedIn" data-en="LinkedIn"></h2>
+                <p class="translate" data-es="Conéctate" data-en="Connect"></p>
+            </a>
+            <a href="https://www.tiktok.com/@strongwork81?lang=es" target="_blank" class="social-card">
+                <i class="fab fa-tiktok"></i>
+                <h2 class="translate" data-es="TikTok" data-en="TikTok"></h2>
+                <p class="translate" data-es="Síguenos" data-en="Follow us"></p>
+            </a>
+            <a href="https://wa.me/8596612670" target="_blank" class="social-card">
+                <i class="fab fa-whatsapp"></i>
+                <h2 class="translate" data-es="WhatsApp" data-en="WhatsApp"></h2>
+                <p class="translate" data-es="Contáctanos" data-en="Contact us"></p>
+            </a>
+        </div>
+        
+        <section class="servicios-section">
+            <h2 class="translate" data-es="Servicios que Ofrecemos" data-en="Services We Offer">Servicios que Ofrecemos</h2>
+            <p style="color: black;" class="translate" data-es="Descubre los servicios que brindamos para mejorar tus espacios." data-en="Discover the services we offer to enhance your spaces.">Descubre los servicios que brindamos para mejorar tus espacios.</p>
+        
+            <div class="servicios-container">
+                <div class="servicio-item">
+                    <i class="fas fa-paint-brush servicio-icon"></i>
+                    <div class="servicio-content">
+                        <h3 class="translate" data-es="Lijado y Stein" data-en="Sanding and Staining">Lijado y Stein</h3>
+                    </div>
+                </div>
+        
+                <div class="servicio-item">
+                    <i class="fas fa-paint-roller servicio-icon"></i>
+                    <div class="servicio-content">
+                        <h3 class="translate" data-es="Trabajo de Pintura Exterior" data-en="Exterior Painting Work">Trabajo de Pintura Exterior</h3>
+                    </div>
+                </div>
+        
+                <div class="servicio-item">
+                    <i class="fas fa-tools servicio-icon"></i>
+                    <div class="servicio-content">
+                        <h3 class="translate" data-es="Instalación de Gabinetes" data-en="Cabinet Installation">Instalación de Gabinetes</h3>
+                    </div>
+                </div>
+        
+                <div class="servicio-item">
+                    <i class="fas fa-bath servicio-icon"></i>
+                    <div class="servicio-content">
+                        <h3 class="translate" data-es="Trabajos en Baños" data-en="Bathroom Works">Trabajos en Baños</h3>
+                    </div>
+                </div>
+        
+                <div class="servicio-item">
+                    <i class="fas fa-paint-brush servicio-icon"></i>
+                    <div class="servicio-content">
+                        <h3 class="translate" data-es="Trabajos de Pintura Interior" data-en="Interior Painting Work">Trabajos de Pintura Interior</h3>
+                    </div>
+                </div>
+        
+                <!-- Nuevo servicio: Trabajo de remodelación en general -->
+                <div class="servicio-item">
+                    <i class="fas fa-home servicio-icon"></i>
+                    <div class="servicio-content">
+                        <h3 class="translate" data-es="Trabajo de Remodelación en General" data-en="General Remodeling Work">Trabajo de Remodelación en General</h3>
+                    </div>
+                </div>
+        
+                <!-- Nuevo servicio: Sótano acabado -->
+                <div class="servicio-item">
+                    <i class="fas fa-door-open servicio-icon"></i>
+                    <div class="servicio-content">
+                        <h3 class="translate" data-es="Sótano Acabado" data-en="Finished Basement">Sótano Acabado</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/strongpaintingwork@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+            <input type="hidden" name="_captcha" value="false">
+        
+            <!-- Campo de Nombre -->
+            <div class="form-group">
+                <label for="name" class="translate" data-es="Nombre:" data-en="Name:"></label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+        
+            <!-- Campo de Correo Electrónico -->
+            <div class="form-group">
+                <label for="email" class="translate" data-es="Correo Electrónico:" data-en="Email:"></label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+        
+            <!-- Campo de Mensaje -->
+            <div class="form-group">
+                <label for="message" class="translate" data-es="Describe el servicio que necesitas:" data-en="Describe the service you need:"></label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            </div>
+        
+            <!-- Selector de Ubicación -->
+            <div class="form-group">
+                <label for="location" class="translate" data-es="¿De dónde nos contactas?" data-en="Where are you contacting us from?"></label>
+                <select id="location" name="location" required>
+                    <option value="" disabled selected class="translate" data-es="Selecciona tu ubicación" data-en="Select your location"></option>
+                    <option value="Cincinnati, OH" class="translate" data-es="Cincinnati, OH" data-en="Cincinnati, OH"></option>
+                    <option value="Mason, OH" class="translate" data-es="Mason, OH" data-en="Mason, OH"></option>
+                    <option value="West Chester, OH" class="translate" data-es="West Chester, OH" data-en="West Chester, OH"></option>
+                    <option value="Liberty Township, OH" class="translate" data-es="Liberty Township, OH" data-en="Liberty Township, OH"></option>
+                    <option value="Fairfield, OH" class="translate" data-es="Fairfield, OH" data-en="Fairfield, OH"></option>
+                    <option value="Hamilton, OH" class="translate" data-es="Hamilton, OH" data-en="Hamilton, OH"></option>
+                    <option value="Blue Ash, OH" class="translate" data-es="Blue Ash, OH" data-en="Blue Ash, OH"></option>
+                    <option value="Kenwood, OH" class="translate" data-es="Kenwood, OH" data-en="Kenwood, OH"></option>
+                    <option value="Montgomery, OH" class="translate" data-es="Montgomery, OH" data-en="Montgomery, OH"></option>
+                </select>
+            </div>
+        
+            <!-- Campo de Dirección -->
+            <div class="form-group">
+                <label for="address" class="translate" data-es="Dirección de trabajo:" data-en="Work address:"></label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter the address where the service will take place" required></textarea>
+            </div>
+        
+            <!-- Campo de Teléfono -->
+            <div class="form-group">
+                <label for="phone" class="translate" data-es="Teléfono:" data-en="Phone:"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+            </div>
+        
+            <button type="submit" class="translate" data-es="Enviar" data-en="Submit"></button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61571726706833" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.tiktok.com/@strongwork81?lang=es" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/strong-painting-work-318481346/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    <p class="translate" data-es="&copy; 2025 Strong Painting Work. Todos los derechos reservados." data-en="&copy; 2025 Strong Painting Work. All rights reserved."></p>
+</footer>
+
+
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+</script>
+
+
+<script>
+    // Al cargar la página, se ajusta el idioma predeterminado
+    document.addEventListener("DOMContentLoaded", function() {
+        const language = document.getElementById("language-selector").value; // 'es' o 'en'
+        translatePage(language); // Cambiar el texto según el idioma
+    });
+
+    // Cambiar idioma al seleccionar una opción
+    document.getElementById("language-selector").addEventListener("change", function() {
+        const language = this.value;
+        translatePage(language);
+    });
+
+    function translatePage(language) {
+        const elements = document.querySelectorAll(".translate");
+
+        elements.forEach(function(element) {
+            const translatedText = element.getAttribute("data-" + language);
+            if (translatedText) {
+                element.textContent = translatedText;
+            }
+        });
+    }
+</script>
+
+<script src="Scripts.js"></script>
+</body>
+</html>
