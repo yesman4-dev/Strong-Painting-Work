@@ -35,76 +35,215 @@
     <section id="inicio">
         <div class="carousel">
             <div class="carousel-slide" style="background-image: url('recursos/banner1.jpg');">
-                <div class="carousel-text translate" data-es="Calidad Profesional en Pintura" data-en="Professional Quality in Painting">Calidad Profesional en Pintura</div>
+                <div class="carousel-text translate" data-es="Trabajo de Pintura Exteriorr" data-en="Exterior Painting Work">Trabajo de Pintura Exterior</div>
             </div>
             <div class="carousel-slide" style="background-image: url('recursos/banner2.jpg');">
-                <div class="carousel-text translate" data-es="Trabajos de Fontanería y Más" data-en="Plumbing Work and More">Trabajos de Fontanería y Más</div>
+                <div class="carousel-text translate" data-es="Trabajo de Pintura Exterior" data-en="Exterior Painting Work">Trabajo de Pintura Exterior</div>
             </div>
-            <div class="carousel-slide" style="background-image: url('recursos/banner3.jpg');">
-                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            <div class="carousel-slide" style="background-image: url('recursos/estado3-thumb.jpg');">
+                <div class="carousel-text translate" data-es="Lijado y Stein" data-en="Sanding and Staining"> Lijado y Stein</div>
             </div>
-            <div class="carousel-slide" style="background-image: url('recursos/banner4.jpg');">
-                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            <div class="carousel-slide" style="background-image: url('recursos/estado5-thumb.jpg');">
+                <div class="carousel-text translate" data-es="Lijado y Stein" data-en="Sanding and Staining">Lijado y Stein</div>
             </div>
-            <div class="carousel-slide" style="background-image: url('recursos/banner5.jpg');">
-                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            <div class="carousel-slide" style="background-image: url('recursos/proceso7.jpg');">
+                <div class="carousel-text translate" data-es="Lijado y Steins" data-en="Sanding and Staining">Lijado y Stein</div>
             </div>
-            <div class="carousel-slide" style="background-image: url('recursos/banner6.jpg');">
-                <div class="carousel-text translate" data-es="Interiores y Exteriores Perfectos" data-en="Perfect Interiors and Exteriors">Interiores y Exteriores Perfectos</div>
+            <div class="carousel-slide" style="background-image: url('recursos/pinturaInterior.jpg');">
+                <div class="carousel-text translate" data-es="Trabajos de Pintura Interior" data-en="Interior Painting Work">Trabajos de Pintura Interior</div>
             </div>
         </div>
     </section>
 
     <section id="proyectos">
+        
         <h2 class="translate" data-es="Proyectos" data-en="Projects">Proyectos</h2>
         <div class="filter-buttons">
-            <button class="filter-btn translate" data-filter="all" data-es="Todos" data-en="All">Todos</button>
-            <button class="filter-btn translate" data-filter="procesos" data-es="Proyectos en Proceso" data-en="Ongoing Projects">Proyectos en Proceso</button>
-            <button class="filter-btn translate" data-filter="terminados" data-es="Proyectos Terminados" data-en="Completed Projects">Proyectos Terminados</button>
+            <button class="filter-btn translate" data-filter="all" data-es="Todos" data-en="All">
+                <i class="fas fa-border-all"></i> <span>Todos</span>
+            </button>
+            <button class="filter-btn translate" data-filter="lijado" data-es="Lijado y Stein" data-en="Sanding and Staining">
+                <i class="fas fa-paint-brush"></i> <span>Lijado y Stein</span>
+            </button>
+            <button class="filter-btn translate" data-filter="Exterior" data-es="Trabajo de Pintura Exterior" data-en="Exterior Painting">
+                <i class="fas fa-tree"></i> <span>Pintura Exterior</span>
+            </button>
+            <button class="filter-btn translate" data-filter="Gabinetes" data-es="Instalación de Gabinetes" data-en="Cabinet Installation">
+                <i class="fas fa-cabinet-filing"></i> <span>Gabinetes</span>
+            </button>
+            <button class="filter-btn translate" data-filter="Baños" data-es="Trabajos en Baños" data-en="Bathroom Works">
+                <i class="fas fa-bath"></i> <span>Baños</span>
+            </button>
+            <button class="filter-btn translate" data-filter="Interior" data-es="Trabajos de Pintura Interior" data-en="Interior Painting">
+                <i class="fas fa-home"></i> <span>Pintura Interior</span>
+            </button>
+            <button class="filter-btn translate" data-filter="escaleras" data-es="Escaleras y soluciones de barandillas" data-en="Staircases and Railing Solutions">
+                <i class="fas fa-arrow-up"></i> <span>Escaleras y soluciones de barandillas</span>
+            </button>
+            
+            
         </div>
         
-        <div class="project-gallery">
-            <div class="project-item procesos">
-                <img src="recursos/proceso1.jpg" alt="Proyecto en Proceso 1">
+        <div class="project-gallery coverflow">
+            <div class="cover project-item active lijado" data-title="Proceso 1">
+                <img src="recursos/estado3-thumb.jpg" alt="Proyecto en Proceso 1">
             </div>
-            <div class="project-item terminados">
-                <img src="recursos/terminado1.jpg" alt="Proyecto Terminado 1">
+            <div class="cover project-item active  lijado" data-title="Terminado 1">
+                <img src="recursos/estado5-thumb.jpg" alt="Proyecto Terminado 1">
             </div>
-            <div class="project-item procesos">
-                <img src="recursos/proceso3.jpg" alt="Proyecto en Proceso 1">
+            <div class="cover project-item active  lijado" data-title="Terminado 2">
+                <img src="recursos/lijado1.jpg" alt="Proyecto Terminado 2">
             </div>
-            <div class="project-item terminados">
-                <img src="recursos/terminado2.jpg" alt="Proyecto Terminado 1">
+            <div class="cover project-item active  lijado" data-title="Terminado 2">
+                <img src="recursos/lijado2.jpg" alt="Proyecto Terminado 2">
             </div>
-            <div class="project-item procesos">
-                <img src="recursos/proceso2.jpg" alt="Proyecto en Proceso 2">
+            <div class="cover project-item active  active  lijado" data-title="Terminado 2">
+                <img src="recursos/stein1.jpg" alt="Proyecto Terminado 2">
             </div>
-            <div class="project-item terminados">
-                <img src="recursos/terminado3.jpg" alt="Proyecto Terminado 1">
+            <div class="cover project-item active  lijado" data-title="Terminado 2">
+                <img src="recursos/stein2.jpg" alt="Proyecto Terminado 2">
             </div>
-            <div class="project-item procesos">
-                <img src="recursos/proceso4.jpg" alt="Proyecto en Proceso 1">
+            <div class="cover project-item active  lijado" data-title="Terminado 2">
+                <img src="recursos/stein3.jpg" alt="Proyecto Terminado 2">
             </div>
-            <div class="project-item terminados">
-                <img src="recursos/terminado4.jpg" alt="Proyecto Terminado 1">
+            <div class="cover project-item active  lijado" data-title="Terminado 2">
+                <img src="recursos/stein4.jpg" alt="Proyecto Terminado 2">
             </div>
-            <div class="project-item terminados">
-                <img src="recursos/terminado5.jpg" alt="Proyecto Terminado 1">
+            <div class="cover project-item active  lijado" data-title="Terminado 2">
+                <img src="recursos/stein5.jpg" alt="Proyecto Terminado 2">
             </div>
-            <div class="project-item procesos">
-                <img src="recursos/proceso5.jpg" alt="Proyecto en Proceso 1">
+
+
+            <div class="cover project-item Exterior" data-title="Proceso 2">
+                <img src="recursos/banner1.jpg" alt="Proyecto en Proceso 2">
             </div>
-            <div class="project-item terminados">
-                <img src="recursos/terminado6.jpg" alt="Proyecto Terminado 2">
+            <div class="cover project-item Exterior" data-title="Proceso 2">
+                <img src="recursos/banner2.jpg" alt="Proyecto en Proceso 2">
             </div>
-            <div class="project-item procesos">
-                <img src="recursos/proceso6.jpg" alt="Proyecto en Proceso 1">
+            <div class="cover project-item Exterior" data-title="Proceso 2">
+                <img src="recursos/banner3.jpg" alt="Proyecto en Proceso 2">
             </div>
-            <div class="project-item terminados">
-                <img src="recursos/terminado7.jpg" alt="Proyecto Terminado 2">
+            <div class="cover project-item Exterior" data-title="Proceso 2">
+                <img src="recursos/banner5.jpg" alt="Proyecto en Proceso 2">
             </div>
+            <div class="cover project-item Exterior" data-title="Proceso 2">
+                <img src="recursos/exterior2.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Exterior" data-title="Proceso 2">
+                <img src="recursos/exterior3.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Exterior" data-title="Proceso 2">
+                <img src="recursos/estado9-thumb.jpg" alt="Proyecto en Proceso 2">
+            </div>
+
+            <div class="cover project-item Gabinetes" data-title="Proceso 2">
+                <img src="recursos/terminado9.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Gabinetes" data-title="Proceso 2">
+                <img src="recursos/gavinete.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Gabinetes" data-title="Proceso 2">
+                <img src="recursos/gavinete2.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Gabinetes" data-title="Proceso 2">
+                <img src="recursos/gavinete3.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Gabinetes" data-title="Proceso 2">
+                <img src="recursos/gavinete4.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Gabinetes" data-title="Proceso 2">
+                <img src="recursos/gabi.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Gabinetes" data-title="Proceso 2">
+                <img src="recursos/gavinete5.jpg" alt="Proyecto en Proceso 2">
+            </div>
+       
+
+            <div class="cover project-item Baños" data-title="Proceso 2">
+                <img src="recursos/terminado4.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Baños" data-title="Proceso 2">
+                <img src="recursos/terminado8.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Baños" data-title="Proceso 2">
+                <img src="recursos/proceso5.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Baños" data-title="Proceso 2">
+                <img src="recursos/proceso4.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Baños" data-title="Proceso 2">
+                <img src="recursos/bañootro.jpg" alt="Proyecto en Proceso 2">
+            </div>
+        
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/estado8-thumb.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/terminado5.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/terminado10.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/interior.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/interior1.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/inteior4.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/interior5.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item Interior" data-title="Proceso 2">
+                <img src="recursos/interior7.jpg" alt="Proyecto en Proceso 2">
+            </div>
+    
+    
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa1.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa2.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa3.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa4.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa5.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa6.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa7.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa8.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa9.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa10.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa11.jpg" alt="Proyecto en Proceso 2">
+            </div>
+            <div class="cover project-item escaleras" data-title="Proceso 2">
+                <img src="recursos/pasa12.jpg" alt="Proyecto en Proceso 2">
+            </div>
+
+
+
         </div>
+        
     </section>
+    
 
     <section id="servicios">
         <h2 class="translate" data-es="Servicios que Ofrecemos" data-en="Services We Offer">Servicios que Ofrecemos</h2>
@@ -134,6 +273,11 @@
                 <h3 class="translate" data-es="Trabajos de Pintura Interior" data-en="Interior Painting Work">Trabajos de Pintura Interior</h3>
                 <p class="translate" data-es="Creamos ambientes interiores acogedores y personalizados con pintura de alta calidad." data-en="We create cozy and personalized interior environments with high-quality paint.">Creamos ambientes interiores acogedores y personalizados con pintura de alta calidad.</p>
             </div>
+            <div class="service-item">
+                <i class="fas fa-stairs"></i>
+                <h3 class="translate" data-es="Instalación de Pasamanos y Barandillas" data-en="Handrail and Railing Installation">Instalación de Pasamanos y Barandillas</h3>
+                <p class="translate" data-es="Fabricamos e instalamos pasamanos y barandillas de alta calidad para escaleras, tanto para hogares como edificios." data-en="We manufacture and install high-quality handrails and railings for staircases, both for homes and buildings.">Fabricamos e instalamos pasamanos y barandillas de alta calidad para escaleras, tanto para hogares como edificios.</p>
+            </div>
         </div>
     </section>
     
@@ -145,8 +289,8 @@
             <a href="https://www.tiktok.com/@strongwork81?lang=es" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-tiktok"></i>
             </a>
-            <a href="https://www.linkedin.com/in/strong-painting-work-318481346/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
+            <a href="https://wa.me/8596612670" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
             </a>
         </div>
         <p class="translate" data-es="&copy; 2025 Strong Painting Work. Todos los derechos reservados." data-en="&copy; 2025 Strong Painting Work. All rights reserved."></p>
@@ -154,6 +298,7 @@
     
 
     <script src="Scripts.js"></script>
+
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
@@ -162,36 +307,92 @@
             navLinks.classList.toggle('open');
         });
 
-        // Filtrado de proyectos
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projectItems = document.querySelectorAll('.project-item');
+  const covers = document.querySelectorAll(".cover");
+const filterButtons = document.querySelectorAll(".filter-btn");
+let activeIndex = 0;
 
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.getAttribute('data-filter');
-                projectItems.forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
+// Función para actualizar la vista del cover flow
+function updateCoverFlow() {
+    const visibleCovers = Array.from(covers).filter(cover => cover.style.display !== "none");
+    visibleCovers.forEach((cover, index) => {
+        cover.classList.remove("active", "left", "right");
+
+        if (index === activeIndex) {
+            cover.classList.add("active");
+        } else if (index === activeIndex - 1) {
+            cover.classList.add("left");
+        } else if (index === activeIndex + 1) {
+            cover.classList.add("right");
+        } else {
+            cover.classList.remove("left", "right", "active");
+        }
+    });
+}
+
+// Función para manejar el filtrado
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.getAttribute("data-filter");
+        activeIndex = 0; // Reinicia al primer elemento visible
+        covers.forEach(cover => {
+            if (filter === "all" || cover.classList.contains(filter)) {
+                cover.style.display = "block";
+            } else {
+                cover.style.display = "none";
+            }
         });
+        updateCoverFlow();
+    });
+});
+
+// Navegación con teclas
+document.addEventListener("keydown", (e) => {
+    const visibleCovers = Array.from(covers).filter(cover => cover.style.display !== "none");
+    if (e.key === "ArrowRight" && activeIndex < visibleCovers.length - 1) {
+        activeIndex++;
+        updateCoverFlow();
+    } else if (e.key === "ArrowLeft" && activeIndex > 0) {
+        activeIndex--;
+        updateCoverFlow();
+    }
+});
+
+// Navegación con clics
+covers.forEach((cover, index) => {
+    cover.addEventListener("click", () => {
+        const visibleCovers = Array.from(covers).filter(cover => cover.style.display !== "none");
+        if (index > activeIndex) activeIndex++;
+        else if (index < activeIndex) activeIndex--;
+        updateCoverFlow();
+    });
+});
+
+// Inicializa la vista
+updateCoverFlow();
+
+
+    
+
+
     </script>
 
 <script>
-    document.getElementById("language-selector").addEventListener("change", function() {
-        var language = this.value; // 'es' o 'en'
-        var elements = document.querySelectorAll(".translate");
+        document.getElementById("language-selector").addEventListener("change", function() {
+            var language = this.value; // 'es' o 'en'
+            var elements = document.querySelectorAll(".translate");
 
-        elements.forEach(function(element) {
-            var translatedText = element.getAttribute("data-" + language);
-            if (translatedText) {
-                element.textContent = translatedText;
-            }
+            elements.forEach(function(element) {
+                var translatedText = element.getAttribute("data-" + language);
+                if (translatedText) {
+                    // Si el elemento contiene un ícono (<i>), solo actualizamos el texto del span
+                    if (element.querySelector("span")) {
+                        element.querySelector("span").textContent = translatedText;
+                    } else {
+                        element.textContent = translatedText;
+                    }
+                }
+            });
         });
-    });
 </script>
 
 </body>

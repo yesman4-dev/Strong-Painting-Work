@@ -120,7 +120,42 @@
     </section>
     
 
-
+    <section id="tipos-de-trabajo">
+        <h2 class="translate" data-es="Tipos de Trabajo" data-en="Types of Work">Tipos de Trabajo</h2>
+        <div class="tipos-container">
+            <div class="tipo-trabajo" data-img="recursos/mosaicolija.jpg">
+                <img src="recursos/mosaicolija.jpg" alt="Lijado y Stein" class="expandable">
+                <h3 class="translate" data-es="Lijado y Stein" data-en="Sanding and Staining">Lijado y Stein</h3>
+            </div>
+            <div class="tipo-trabajo" data-img="recursos/mosaicoesterios.jpg">
+                <img src="recursos/mosaicoesterios.jpg" alt="Trabajo de Pintura Exterior" class="expandable">
+                <h3 class="translate" data-es="Trabajo de Pintura Exterior" data-en="Exterior Painting Work">Trabajo de Pintura Exterior</h3>
+            </div>
+            <div class="tipo-trabajo" data-img="recursos/collagegabinetes.jpg">
+                <img src="recursos/collagegabinetes.jpg" alt="Instalación de Gabinetes" class="expandable">
+                <h3 class="translate" data-es="Instalación de Gabinetes" data-en="Cabinet Installation">Instalación de Gabinetes</h3>
+            </div>
+            <div class="tipo-trabajo" data-img="recursos/collagebano.jpg">
+                <img src="recursos/collagebano.jpg" alt="Trabajos en Baños" class="expandable">
+                <h3 class="translate" data-es="Trabajos en Baños" data-en="Bathroom Works">Trabajos en Baños</h3>
+            </div>
+            <div class="tipo-trabajo" data-img="recursos/mosaicointerior.jpg">
+                <img src="recursos/mosaicointerior.jpg" alt="Trabajos de Pintura Interior" class="expandable">
+                <h3 class="translate" data-es="Trabajos de Pintura Interior" data-en="Interior Painting Work">Trabajos de Pintura Interior</h3>
+            </div>
+            <div class="tipo-trabajo" data-img="recursos/mosaicoEscaleras.jpg">
+                <img src="recursos/mosaicoEscaleras.jpg" alt="Instalación de Pasamanos y Barandillas" class="expandable">
+                <h3 class="translate" data-es="Instalación de Pasamanos y Barandillas" data-en="Handrail and Railing Installation">Instalación de Pasamanos y Barandillas</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image" alt="Expanded Image">
+    </div>
+    
     
 <!-- Sección de Misión y Visión -->
 <section id="mision-vision">
@@ -137,6 +172,8 @@
         </div>
     </div>
 </section>
+
+
 
    
     <section id="map-section">
@@ -227,8 +264,8 @@
             <a href="https://www.tiktok.com/@strongwork81?lang=es" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-tiktok"></i>
             </a>
-            <a href="https://www.linkedin.com/in/strong-painting-work-318481346/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
+            <a href="https://wa.me/8596612670" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
             </a>
         </div>
         <p class="translate" data-es="&copy; 2025 Strong Painting Work. Todos los derechos reservados." data-en="&copy; 2025 Strong Painting Work. All rights reserved."></p>
@@ -241,6 +278,35 @@
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('open');
         });
+
+
+        // Selección de elementos
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const closeBtn = document.querySelector(".lightbox .close");
+const images = document.querySelectorAll(".expandable");
+
+// Mostrar la imagen en el lightbox
+images.forEach((img) => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImage.src = img.src;
+    });
+});
+
+// Cerrar el lightbox
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+// Cerrar el lightbox al hacer clic fuera de la imagen
+lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+
+
 
 
                     // Selección de elementos
