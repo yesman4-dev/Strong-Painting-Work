@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +14,13 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="translate" data-es="Inicio" data-en="Home">Inicio</a></li>
                 <li><a href="proyectos.html" class="translate" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
-                <li><a href="contacto.html" class="translate" data-es="Contáctame" data-en="Contact">Contáctame</a></li>
+                <li><a href="contacto.html" class="translate" data-es="Contactame" data-en="Contact">Contáctame</a></li>
                 <!-- Selector de idioma dentro del menú -->
                 <li>
                     <select id="language-selector" class="language-selector">
+                        <option value="en" selected>English</option>
                         <option value="es">Español</option>
-                        <option value="en">English</option>
+                       
                     </select>
                 </li>
             </ul>
@@ -378,23 +379,38 @@ updateCoverFlow();
     </script>
 
 <script>
-        document.getElementById("language-selector").addEventListener("change", function() {
-            var language = this.value; // 'es' o 'en'
-            var elements = document.querySelectorAll(".translate");
+    // Función para cambiar el idioma
+    function changeLanguage(language) {
+        var elements = document.querySelectorAll(".translate");
 
-            elements.forEach(function(element) {
-                var translatedText = element.getAttribute("data-" + language);
-                if (translatedText) {
-                    // Si el elemento contiene un ícono (<i>), solo actualizamos el texto del span
-                    if (element.querySelector("span")) {
-                        element.querySelector("span").textContent = translatedText;
-                    } else {
-                        element.textContent = translatedText;
-                    }
+        elements.forEach(function(element) {
+            var translatedText = element.getAttribute("data-" + language);
+            if (translatedText) {
+                // Si el elemento contiene un ícono (<i>), solo actualizamos el texto del span
+                if (element.querySelector("span")) {
+                    element.querySelector("span").textContent = translatedText;
+                } else {
+                    element.textContent = translatedText;
                 }
-            });
+            }
         });
+    }
+
+    // Evento para cambiar el idioma al seleccionar una opción
+    document.getElementById("language-selector").addEventListener("change", function() {
+        var language = this.value; // 'es' o 'en'
+        changeLanguage(language);  // Llamamos a la función para cambiar el idioma
+    });
+
+    // Al cargar la página, establecemos el idioma por defecto como inglés
+    window.addEventListener('load', () => {
+        const defaultLanguage = 'en';
+        // Establecer el valor por defecto del selector a 'en'
+        document.getElementById("language-selector").value = defaultLanguage;
+        changeLanguage(defaultLanguage);  // Llamamos a la función para aplicar el idioma por defecto
+    });
 </script>
+
 
 </body>
 </html>
